@@ -4,13 +4,11 @@ import java.util.Random;
 
 public class Task2 {
     public static void main(String[] args) {
-int [] array = new int[10];
+int [] array = new int[100];
         Random random = new Random();
         int max = 0;
-        Character condition = '0';
         int counterEnd0 = 0;
         int sum0 = 0;
-        String a;
 
         int min  = 10000;
         for (int i = 0; i < array.length; i++){
@@ -30,12 +28,10 @@ for (int arr: array) {
         System.out.println("Минимальное значение массива: " + min);
 
         for (Integer arr: array) {
-            a = arr.toString();
-char [] chars = a.toCharArray();
-Character result = chars[chars.length-1];
-if (result == condition){
-sum0 = sum0 + arr;
-    counterEnd0++;
+            if (arr%10 == 0){
+                sum0 = sum0 + arr;
+                counterEnd0++;
+
 }
 
         }

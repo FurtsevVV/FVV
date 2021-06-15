@@ -7,9 +7,6 @@ public class Task1 {
         Scanner sc = new Scanner(System.in);
         String a;
 
-
-
-
         while (true){
              a = sc.nextLine();
             if (a.equals("Stop")) {
