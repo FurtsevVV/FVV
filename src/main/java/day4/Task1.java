@@ -14,16 +14,16 @@ public class Task1 {
         int sum = 0;
 
         int arrLength = sc.nextInt();
-        int [] array = new int [arrLength];
-        for (int i = 0; i< array.length; i++){
+        int[] array = new int[arrLength];
+        for (int i = 0; i < array.length; i++) {
             array[i] = rand.nextInt(10);
-            if (array[i] > 8){
+            if (array[i] > 8) {
                 counter8++;
             }
-            if (array[i] == 1){
+            if (array[i] == 1) {
                 counter1++;
             }
-            if (array[i]%2 == 0){
+            if (array[i] % 2 == 0) {
                 counterChet++;
             }
             sum = sum + array[i];
@@ -34,7 +34,7 @@ public class Task1 {
         System.out.println("Количество чисел равных 1: " + counter1);
         System.out.println("Количество четных чисел: " + counterChet);
         System.out.println("Количество нечетных чисел " + (array.length - counterChet));
-        System.out.println("Сумма всех элементов массива: " + sum );
+        System.out.println("Сумма всех элементов массива: " + sum);
 
     }
 }

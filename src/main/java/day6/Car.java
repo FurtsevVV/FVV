@@ -29,19 +29,15 @@ public class Car {
         this.color = color;
     }
 
-    public void info () {
+    public void info() {
         System.out.println("Это автомобиль");
     }
 
     public int yearDifference(int inputYear) {
-        if (inputYear > yearOfProduction){
 
-            return inputYear - yearOfProduction;
+        System.out.println("Год выпуска автомобиля " + yearOfProduction + ", год для сравнения " + inputYear);
+        return inputYear - yearOfProduction;
+
 
     }
-    else
-            System.out.println("Год выпуска автомобиля " + yearOfProduction + ", год для сравнения " + inputYear);
-        return Math.abs(inputYear - yearOfProduction);
-    }
-
 }

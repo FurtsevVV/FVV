@@ -17,17 +17,18 @@ public class Task4 {
             array[i] = random.nextInt(10000);
             list.add(array[i]);
         }
-Integer summa;
+        Integer summa;
         for (int i = 1; i < 99; i++) {
-        summa = (list.get(i) + list.get(i - 1) + list.get(i + 1));
-        if (summa > maxThree) {
-            maxThree = summa;
-            indexx = i-1;
-            listIndex.add(indexx);
+            summa = (list.get(i) + list.get(i - 1) + list.get(i + 1));
+            if (summa > maxThree) {
+                maxThree = summa;
+                indexx = i - 1;
+                listIndex.add(indexx);
+            }
         }
-        }
-            System.out.println(maxThree);
+        System.out.println(maxThree);
         System.out.println(listIndex.get(listIndex.size() - 1));
 
-    }}
+    }
+}
 

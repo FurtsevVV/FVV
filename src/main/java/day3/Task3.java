@@ -8,15 +8,15 @@ public class Task3 {
         double a;
         double b;
         double result;
-for (int i = 0; i < 5; i++){
-a= sc.nextInt();
-b=sc.nextInt();
-if (b ==0){
-    System.out.println("Деление на 0");
-    continue;
-}
-result = a/ b;
-    System.out.println(result);
-}
+        for (int i = 0; i < 5; i++) {
+            a = sc.nextInt();
+            b = sc.nextInt();
+            if (b == 0) {
+                System.out.println("Деление на 0");
+                continue;
+            }
+            result = a / b;
+            System.out.println(result);
+        }
     }
 }

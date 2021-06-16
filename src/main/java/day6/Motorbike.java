@@ -8,7 +8,7 @@ public class Motorbike {
     private String model;
     private String color;
 
-    public Motorbike(int yearOfProduction, String model, String color){
+    public Motorbike(int yearOfProduction, String model, String color) {
         this.yearOfProduction = yearOfProduction;
         this.model = model;
         this.color = color;
@@ -26,13 +26,13 @@ public class Motorbike {
         return color;
     }
 
-    public void info () {
+    public void info() {
         System.out.println("Это мотоцикл");
     }
 
     public int yearDifference(int inputYear) {
         if (inputYear > yearOfProduction)
-        return (inputYear - yearOfProduction);
+            return (inputYear - yearOfProduction);
         else
             System.out.println("Год выпуска мотоцикла " + yearOfProduction + ", год для сравнения " + inputYear);
         return Math.abs(inputYear - yearOfProduction);
