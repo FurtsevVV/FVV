@@ -17,9 +17,8 @@ public class Task4 {
             array[i] = random.nextInt(10000);
             list.add(array[i]);
         }
-        Integer summa;
         for (int i = 1; i < 99; i++) {
-            summa = (list.get(i) + list.get(i - 1) + list.get(i + 1));
+            Integer summa = (list.get(i) + list.get(i - 1) + list.get(i + 1));
             if (summa > maxThree) {
                 maxThree = summa;
                 indexx = i - 1;

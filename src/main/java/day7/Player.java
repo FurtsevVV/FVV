@@ -9,16 +9,14 @@ public class Player {
 
     public Player(int stamina) {
         this.stamina = stamina;
-        countPlayers++;
-        if (countPlayers > 6) {
-            countPlayers = 6;
-        }
+        while (countPlayers != 6)
+            countPlayers++;
+
+
     }
 
     public int getStamina() {
-        if (stamina < 0) {
-            return 0;
-        }
+
         return stamina;
 
     }
@@ -28,9 +26,14 @@ public class Player {
     }
 
     public void run() {
-        stamina = stamina - 1;
-        if (stamina == 0) {
-            countPlayers--;
+        while (stamina >= 0) {
+
+            stamina = stamina - 1;
+
+            if (stamina == 0) {
+                countPlayers--;
+
+            }
         }
     }
 

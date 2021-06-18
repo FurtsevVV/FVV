@@ -12,9 +12,15 @@ public class Task2 {
         Player p5 = new Player(random.nextInt(11) + 90);
         Player p6 = new Player(random.nextInt(11) + 90);
         Player p7 = new Player(random.nextInt(11) + 90);
+        Player p8 = new Player(random.nextInt(11) + 90);
         Player.info();
         for (int i = 0; i < 100; i++) {
+
             p1.run();
+        }
+        for (int i = 0; i < 100; i++) {
+
+            p2.run();
         }
         Player.info();
     }
