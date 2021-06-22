@@ -29,7 +29,7 @@ public class TestFigures {
     public static double calculateRedArea(Figure[] figures) {
         double sumArea = 0;
         for (int i = 0; i < figures.length; i++) {
-            if (figures[i].getColor().equals("Red")) {
+            if ("Red".equals(figures[i].getColor())) {
                 sumArea += figures[i].area();
             }
         }
