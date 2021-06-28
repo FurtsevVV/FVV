@@ -20,8 +20,8 @@ public class Task1 {
         long timeStart2 = System.currentTimeMillis();
 
         for (int i = 1; i < 20001; i++) {
-            String str = Integer.toString(i);
-            sum = sum + str + " ";
+
+            sum += i + " ";
 
         }
         System.out.println(sum);

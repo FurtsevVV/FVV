@@ -2,11 +2,12 @@ package day12.task4;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 public class MusicBand {
     private String name;
     private int year;
-    private Collection<String> members = new ArrayList<>();
+    private List<String> members = new ArrayList<>();
 
     public MusicBand(String name, int year) {
         this.name = name;

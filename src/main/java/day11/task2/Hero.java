@@ -6,12 +6,12 @@ public abstract class Hero implements PhysAttack {
     int physAtt;
     double attValue;
     int health;
-    int HEALTHMAX = 100;
-    int HEALTHMIN = 0;
+    final static int HEALTHMAX = 100;
+    final static int HEALTHMIN = 0;
 
 
     public Hero() {
-        health = 100;
+        health = HEALTHMAX;
 
     }
 
@@ -51,7 +51,7 @@ public abstract class Hero implements PhysAttack {
 
         attValue = physAtt * (1 - hero.physDef);
         if (hero.health - attValue < HEALTHMIN) {
-            hero.health = 0;
+            hero.health = HEALTHMIN;
         } else
             hero.health -= attValue;
     }
