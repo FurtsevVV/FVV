@@ -16,15 +16,13 @@ public class Task1 {
 
         try {
             pw = new PrintWriter("C:/JavaMarathon2021/JavaMarathon2021/src/main/resources/missing_shoes.txt");
-        }
-        catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
-       }
+        }
         Scanner sc = null;
         try {
             sc = new Scanner(file);
-        }
-        catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
         while (sc.hasNextLine()) {
