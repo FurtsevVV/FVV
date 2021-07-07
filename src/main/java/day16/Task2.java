@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Task2 {
@@ -16,8 +17,8 @@ public class Task2 {
         FileWriter writer = new FileWriter(file1);
         for (int i = 0; i < 1000; i++) {
             int a = (int) (Math.random() * 100);
-            String str = Integer.toString(a);
-            writer.write(str);
+
+            writer.write(Integer.toString(a));
             writer.write(System.getProperty("line.separator"));
         }
         writer.close();
@@ -29,7 +30,7 @@ public class Task2 {
     public static void fillFile(File fileResult, File fileSource) throws IOException {
         FileWriter writer = new FileWriter(fileResult);
 
-        ArrayList<Integer> array = new ArrayList<>();
+        List<Integer> array = new ArrayList<>();
         Scanner scanner = new Scanner(fileSource);
         fileResult.createNewFile();
         int sum = 0;

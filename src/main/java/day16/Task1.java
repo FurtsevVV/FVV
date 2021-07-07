@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Task1 {
@@ -17,30 +18,25 @@ public class Task1 {
 
     public static void printResult(File file) throws FileNotFoundException {
         Scanner scanner = new Scanner(file);
-        ArrayList array = new ArrayList();
+
         double result;
+        int counter = 0;
         int sum = 0;
         while (scanner.hasNextLine()) {
             String a = scanner.nextLine();
             int x = Integer.parseInt(a);
-            array.add(x);
+
+            counter++;
+            sum += x;
         }
-        for (int i = 0; i < array.size(); i++) {
-            sum += (int) array.get(i);
-        }
-        result = (double) sum / array.size();
+
+        result = (double) sum / counter;
         System.out.println(sum);
         System.out.println(result);
-        System.out.println(round(result, 3));
+        System.out.printf("%.3f", +result);
     }
 
-    private static double round(double value, int places) {
-        if (places < 0) throw new IllegalArgumentException();
 
-        BigDecimal bd = new BigDecimal(Double.toString(value));
-        bd = bd.setScale(places, RoundingMode.HALF_UP);
-        return bd.doubleValue();
-    }
 }
 
 
