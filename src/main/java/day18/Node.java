@@ -1,15 +1,14 @@
 package day18;
 
 public class Node {
-    int value;
-    Node LefrChild;
-    Node RightChild;
+    private int value;
+    private Node lefrChild;
+    private Node rightChild;
 
 
     public Node(int value) {
         this.value = value;
-        LefrChild = null;
-        RightChild = null;
+
     }
 
     public int getValue() {
@@ -21,19 +20,19 @@ public class Node {
     }
 
     public Node getLefrChild() {
-        return LefrChild;
+        return lefrChild;
     }
 
     public void setLefrChild(Node node) {
-        LefrChild = node;
+        lefrChild = node;
     }
 
     public Node getRightChild() {
-        return RightChild;
+        return rightChild;
     }
 
     public void setRightChild(Node node) {
-        RightChild = node;
+        rightChild = node;
     }
 
     @Override
