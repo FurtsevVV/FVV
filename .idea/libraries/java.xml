@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="java">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../JavaMarathon2021/emoji-java-master.zip!/emoji-java-master/emoji-table-generator/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../../../JavaMarathon2021/emoji-java-master.zip!/emoji-java-master/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../../../JavaMarathon2021/emoji-java-master.zip!/emoji-java-master/src/test/java" />
+    </SOURCES>
+  </library>
+</component>
