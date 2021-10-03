@@ -1,4 +1,4 @@
-package ShuvalovSpring5Hibernate;
+package UdemySpring2;
 
 import static org.junit.Assert.assertTrue;
 
